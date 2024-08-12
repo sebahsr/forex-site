@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import ForexTable from '../components/ForexTable'
-import getLatest from './api/forexapi';
-import CurrencyConverter from '../components/currncyConverter';
-import ComparisonTool from '../components/comparissonTool';
-import HistoricalData from '../components/HistoricalData';
-import Favorites from '../components/favourites';
-import RateAlerts from '../components/ratealerts';
-import CurrencyNews from '../components/CurrencyNews';
+// import getLatest from './api/forexapi';
+// import CurrencyConverter from '../components/currncyConverter';
+// import ComparisonTool from '../components/comparissonTool';
+// import HistoricalData from '../components/HistoricalData';
+// import Favorites from '../components/favourites';
+// import RateAlerts from '../components/ratealerts';
+// import CurrencyNews from '../components/CurrencyNews';
 
 export default function Home() {
   const [data, setData] = useState([]);
@@ -23,7 +23,7 @@ export default function Home() {
         <p>Monitor, compare, and convert currency rates effortlessly.</p>
       </header>
 
-      <section>
+      {/* <section>
         <h2>Currency Converter</h2>
         <CurrencyConverter banks={data.rates} />
       </section>
@@ -35,19 +35,19 @@ export default function Home() {
 
       <section>
         <h2>Historical Data</h2>
-        {/* Assuming the selected currency comes from some state or prop*/}
+        {/* Assuming the selected currency comes from some state or prop
         <HistoricalData selectedCurrency="USD" />
       </section>
  
       {/* <section>
         <h2>Favorites/Watchlist</h2>
         <Favorites banks={data.rates} />
-      </section> */}
+      </section> 
 
       <section>
         <h2>Set Rate Alerts</h2>
         <RateAlerts banks={data.rates} />
-      </section>
+      </section> */}
 
        {/*<section>
         <h2>Currency News and Insights</h2>
