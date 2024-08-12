@@ -25,7 +25,7 @@ app.get("/latest", async (req, res) => {
       // doc.data() is never undefined for query doc snapshots
     t.push(doc.data())
     });
- 
+  console.log(t)
     res.json(t)
   } catch (error) {
     console.log(error);
